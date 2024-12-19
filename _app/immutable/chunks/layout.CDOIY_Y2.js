@@ -1,1 +1,0 @@
-import{c as o,a as i}from"./disclose-version.Bg-IVkI4.js";import{S as p,T as f,Q as c,U as d,V as h,R as m,I as u,p as l,y as v,a as y}from"./runtime.Ccas-iY2.js";function _(e,a,...r){var n=e,s=d,t;p(()=>{s!==(s=a())&&(t&&(h(t),t=null),t=c(()=>s(n,...r)))},f),m&&(n=u)}function R(e,a){l(a,!0);var r=o(),n=v(r);_(n,()=>a.children),i(e,r),y()}export{R as L};
