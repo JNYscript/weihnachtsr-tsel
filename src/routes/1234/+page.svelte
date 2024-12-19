@@ -3,16 +3,18 @@
   import {goto} from "$app/navigation";
 
   let loesung:string = $state('');
+  let wrong:boolean = $state(false);
 
   function handle_button(){
 
-      console.log("loesung");
-      console.log(loesung);
-      console.log(loesung.toLowerCase() === "weihnachtsbaum")
+
       if (loesung.toLowerCase() === "weihnachtsbaum"){
           goto(base+"/12342312412");
           console.log("richtig");
+      }else{
+          wrong = true;
       }
+
 
 
   }
@@ -35,5 +37,8 @@ Denn am Ende erwartet mich die Ewigkeit.
 Was bin ich?</div>
 <input bind:value={loesung} placeholder="Antwort" />
 <button class="bg-amber-500 p-4" onmousedown={() => handle_button()}>Abschicken</button>
+        {#if wrong}
+<div>Falsch!!</div>
+        {/if}
 
 </div>
