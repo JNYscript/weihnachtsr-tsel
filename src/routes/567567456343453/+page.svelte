@@ -9,7 +9,7 @@
 
       console.log(loesung);
       if (loesung.toLowerCase() === "boxing day"){
-          goto(base+"/");
+          goto(base+"/32165416513561");
           console.log("richtig");
       }else{
           wrong = true;

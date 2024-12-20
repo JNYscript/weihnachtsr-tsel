@@ -8,7 +8,7 @@
   function handle_button(){
 
 
-      if (loesung.toLowerCase() === "weihnachtsbaum"){
+      if (loesung.toLowerCase() === "weihnachtsbaum" || loesung.toLowerCase() === "tannenbaum"){
           goto(base+"/12342312412");
           console.log("richtig");
       }else{
